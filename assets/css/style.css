@@ -1,0 +1,534 @@
+
+
+:root {
+    --bs-light: #f3f3f3;
+    --bs-light-rgb: 243,243,243;
+    --bs-purple: #893DFF;
+    --purple-dark: #4300AC;
+    --bs-pink: #FF006E;
+    --bs-cyan : #06B9FF;
+    --bs-orange : #FF7900;
+    --bs-yellow : #FECE00;
+    --bs-black : #1c1c1c;
+    
+  }
+
+
+@font-face {
+
+    font-family: 'Lemon Milk';
+    src: url('../font/Lemon Milk Pro Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lemon Milk';
+    src: url('../font/Lemon Milk Pro Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lemon Milk';
+    src: url('../font/Lemon Milk Pro Bold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lemon Milk';
+    src: url('../font/Lemon Milk Pro Ultra Light.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lemon Milk';
+    src: url('../font/Lemon Milk Pro Regular Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lemon Milk';
+    src: url('../font/Lemon Milk Pro Medium Italic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lemon Milk';
+    src: url('../font/Lemon Milk Pro Bold Italic.otf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lemon Milk';
+    src: url('../font/Lemon Milk Pro Ultra Light Italic.otf') format('opentype');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bastia';
+    src: url('../font/Bastia-Bold.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+body {
+    font-family: 'Lemon Milk';
+}
+
+
+.display-1, .display-2, .display-3, .display-4, .display-5, .display-6{
+    font-weight: 600;
+}
+
+.titoletti {
+    font-weight: 400;
+    line-height: 1.4
+}
+
+p {
+    line-height: 1.6;
+}
+
+@media (min-width: 768px) { 
+    p {
+        font-size: 1.2rem;
+    }
+
+    h4 {
+        font-size: 1.6rem;
+    }
+ }
+
+
+.text-purple {
+    --bs-text-opacity: 1;
+    color: var(--bs-purple);
+} 
+.text-purple-dark {
+    --bs-text-opacity: 1;
+    color: var(--purple-dark);
+} 
+.text-orange {
+    --bs-text-opacity: 1;
+    color: var(--bs-orange);
+}
+.text-pink {
+    --bs-text-opacity: 1;
+    color: var(--bs-pink);
+}
+.text-yellow {
+    --bs-text-opacity: 1;
+    color: var(--bs-yellow);
+}
+.text-cyan {
+    --bs-text-opacity: 1;
+    color: var(--bs-cyan);
+}
+
+
+.bg-purple {
+    background-color: var(--bs-purple);
+} 
+.bg-purple-dark {
+    background-color: var(--purple-dark);
+} 
+.bg-orange {
+    background-color: var(--bs-orange);
+}
+.bg-pink {
+    background-color: var(--bs-pink);
+}
+.bg-yellow {
+    background-color: var(--bs-yellow);
+}
+.bg-cyan {
+    background-color: var(--bs-cyan);
+}
+
+
+
+a {
+    text-decoration: none;
+    color: var(--bs-black);
+}
+
+a:hover {
+    color: var(--bs-gray-600);
+}
+
+
+@media (min-width: 768px) { 
+
+    .link{
+        box-shadow:  0 0.0em 0 var(--bs-black);
+        transition: ease 200ms;
+    }
+    .link:hover{
+        box-shadow:  0 0.3em 0 var(--bs-black);
+        transition: ease 200ms;
+        color: var(--bs-black);
+    }
+    
+    
+    .link.text-purple{
+        box-shadow:   0.0em 0 var(--bs-purple);
+    }
+    .link.text-purple:hover{
+        box-shadow:  0 0.3em 0 var(--bs-purple);
+        color: var(--bs-purple);
+    }
+    .link.text-orange{
+        box-shadow:  0 0.0em 0 var(--bs-orange);
+    }
+    .link.text-orange:hover{
+        box-shadow:  0 0.3em 0 var(--bs-orange);
+        color: var(--bs-orange);
+    }
+    .link.text-pink{
+        box-shadow:  0 0.0em 0 var(--bs-pink);
+    }
+    .link.text-pink:hover{
+        box-shadow:  0 0.3em 0 var(--bs-pink);
+        color: var(--bs-pink);
+    }
+    .link.text-yellow{
+        box-shadow:  0 0.0em 0 var(--bs-yellow);
+    }
+    .link.text-yellow:hover{
+        box-shadow:  0 0.3em 0 var(--bs-yellow);
+        color: var(--bs-yellow);
+    }
+    .link.text-cyan{
+        box-shadow:  0 0.0em 0 var(--bs-cyan);
+    }
+    .link.text-cyan:hover{
+        box-shadow:  0 0.3em 0 var(--bs-cyan);
+        color: var(--bs-cyan);
+    }
+ }
+
+
+
+.link.active{
+    font-weight: 600;
+}
+
+.link:not(.active){
+    color: var(--bs-black);
+    font-weight: 400;
+}
+
+
+
+.header-menu li{
+    font-size: 2.8rem;
+}
+
+@media (min-width: 768px) { 
+    .header-menu li{
+        font-size: inherit;
+    }
+ }
+
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler svg {
+color: var(--bs-black);
+opacity: 1;
+}
+
+
+section {
+    padding-block: 2rem;
+}
+
+section.large-space {
+    padding-block: 4rem;
+}
+
+@media (min-width: 768px) { 
+    section {
+        padding-block: 5rem;
+    }
+    
+    section.large-space {
+        padding-block: 10rem;
+    }
+ }
+
+
+
+
+.video-container{
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+}
+
+.video-container .video-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    cursor: pointer;
+    /* background-color: red; */
+}
+
+.video-container .video-overlay .play-icon{
+    width: 30%;
+    margin: auto;
+}
+
+.video-container .video-overlay .play-icon svg{
+    width:  auto;
+    height: auto;
+    color: var(--bs-white);
+    filter: drop-shadow(0 5px 10px var(--bs-black));
+
+}
+
+.profile-column p{
+    margin-bottom: 0rem;
+}
+
+#header {
+    transition: box-shadow 0.3s ease;
+}
+
+
+
+.profile-image {
+    height: 9rem;
+    width: auto;
+    border-radius: 99rem;
+}
+
+
+@media (min-width: 768px) { 
+    .profile-image {
+        height: 12.1rem;
+    }
+ }
+
+
+
+.logo-img {
+    height: 2.7rem;
+    margin-block: 1rem;
+    transition: 0.3s ease-in-out;
+}
+
+.logo-img.collapsed {
+    height: 2rem;
+    margin-block: 0.5rem;
+ }
+ 
+ 
+@media (min-width: 768px) { 
+    .logo-img {
+        height: 3.5rem;
+     }
+
+     .logo-img.collapsed {
+        height: 2.5rem;
+        margin-block: 0.5rem;
+     }
+     
+ }
+
+.header-spacer{
+    height: 4.5rem;
+    width:100%;
+}
+
+#footer {
+    padding-block: 4rem;
+}
+
+ 
+@media (min-width: 768px) { 
+    #footer {
+        padding-block: 5rem;
+    }
+}
+
+
+.menu  {
+    padding: 0;
+    margin: 0;
+    text-align:center;
+    display: flex;
+    flex-direction:column;
+    gap: 1rem;
+}
+
+.menu li {
+    list-style: none;
+}
+
+
+@media (min-width: 768px) { 
+    .menu  {
+        padding: 0;
+        margin: 0;
+        flex-direction:row;
+        gap: 6rem;
+    }
+}
+
+
+.separator {
+    height: 2px;
+    background-color: var(--bs-black);
+    margin-inline: 1rem;
+    margin-block: 3rem;
+}
+
+@media (min-width: 768px) { 
+    .separator {
+        margin-inline: 2rem;
+    }
+}
+
+
+.offcanvas {
+    transition: transform .2s ease-out;
+}
+
+.offcanvas.offcanvas-end {    
+    transform: translateX(-100%);
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.quote {
+    padding-block: 8rem;
+}
+
+@media (min-width: 768px) { 
+    .quote {
+        padding-block: 15rem;
+    }
+}
+
+blockquote {
+    position:relative;
+
+}
+
+blockquote p {
+    font-family:'Bastia';
+    position:relative;
+    font-size: 2.25rem;
+    line-height: 1.2;
+    z-index: 2;
+}
+
+blockquote cite {
+    position:relative;
+    font-style: normal;
+    font-size: 1.2rem;
+    z-index: 2;
+}
+
+
+@media (min-width: 768px) { 
+    blockquote p {
+        font-size: 5rem;
+    }
+}
+
+
+.open-brackets, .close-brackets{
+    position: absolute;
+    height: 5rem;
+    z-index: 1;
+}
+
+
+.open-brackets  svg, .close-brackets svg{
+    height: 100%;
+    width: auto;
+}
+
+.open-brackets {
+    top: -3rem;
+    left: -1rem;
+}
+.close-brackets {
+    bottom:  -5rem;
+    right:0px;
+}
+
+
+@media (min-width: 768px) { 
+    .open-brackets, .close-brackets{
+        height: 11rem;
+    }
+    
+    .open-brackets {
+        top: -8rem;
+        left: -7rem;
+    }
+    .close-brackets {
+        bottom:  -5rem;
+        right: -5rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*::selection {
+    background-color: var(--bs-black);
+    color: var(--bs-white);
+}
