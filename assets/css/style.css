@@ -9,6 +9,7 @@
     --pink-dark: #C31162;
     --bs-cyan : #06B9FF;
     --bs-orange : #FF7900;
+    --orange-dark: #BA5800;
     --bs-yellow : #FECE00;
     --bs-black : #1c1c1c;
   }
@@ -239,6 +240,10 @@ p {
     --bs-text-opacity: 1;
     color: var(--bs-orange);
 }
+.text-orange-dark {
+    --bs-text-opacity: 1;
+    color: var(--orange-dark);
+} 
 .text-pink {
     --bs-text-opacity: 1;
     color: var(--bs-pink);
@@ -680,6 +685,7 @@ blockquote cite {
 @media (min-width: 992px){
     .gap-lg-6 {
         gap: 5rem!important;
+    }
 }
 
 
@@ -696,6 +702,18 @@ blockquote cite {
         height: 6rem;
     }
  }
+
+
+
+ .logo-isia {
+    height: 8rem;
+}
+@media (min-width: 768px) { 
+    .logo-isia {
+        height: 12rem;
+    }
+ }
+
 
 
 *::selection {
